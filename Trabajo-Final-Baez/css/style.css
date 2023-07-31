@@ -1,0 +1,617 @@
+@font-face {
+    font-family: 'satisface';
+    src: url(../fonts/Satisfy-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'marck';
+    src: url(../fonts/MarckScript-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'oleo';
+    src: url(../fonts/OleoScript-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url(../fonts/RobotoSlab-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'abril';
+    src: url(../fonts/AbrilFatface-Regular.ttf);
+}
+
+h1 {
+    font-family: 'oleo';
+    font-size: 50px;
+    color: blue;
+    text-align: center;
+}
+
+p {
+    font-family: 'roboto';
+    font-size: 20px;
+    text-align: justify;
+    margin: 30px 25px;
+}
+
+.form-select {
+    font-weight: 800;
+    color: darkblue;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'abril';
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-top: 50px;
+}
+
+h5 {
+    font-family: 'marck';
+    font-size: 40px;
+    color: darkgreen;
+    text-align: center;
+}
+
+h6 {
+    font-family: 'roboto';
+    font-size: 16px;
+}
+
+li {
+    font-family: 'roboto';
+    font-size: 20px;
+}
+
+.li-margen {
+
+    margin-left: 50px;
+    text-align: left;
+    display: inline-block;
+}
+
+.texto {
+
+    margin-left: 60px;
+    text-indent: 25px;
+    padding: 10px 30px;
+}
+
+.accordion-body {
+
+    margin-left: 65px;
+    text-indent: 25px;
+    padding: 10px 30px;
+}
+
+/* boton consulte*/
+.btn-btn-primary {
+    display: inline-block;
+    /*para que no se superponga*/
+    margin: auto;
+    text-decoration: none;
+    /*font-family: 'oleo';*/
+    color: #000000;
+    font-weight: 800;
+    background: linear-gradient(0deg, rgba(34, 105, 195, 1) 0%, rgba(45, 253, 251, 1) 100%);
+    padding: 15px 45px;
+    border: 1px solid #111110;
+    border-radius: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: all 0.8s;
+}
+
+.btn-btn-primary:hover {
+    background: linear-gradient(180deg, rgba(34, 105, 195, 1) 0%, rgba(45, 253, 251, 1) 100%);
+    font-style: oblique;
+    color: #3b5998;
+}
+
+/*fin boton consulte*/
+
+
+
+
+
+#inicio {
+    background-color: #5581b9;
+    display: flex;
+    flex-direction: column;
+}
+
+.imagen--ppal {
+    width: 100%;
+    padding: 30px;
+    border-radius: 80px;
+
+
+}
+
+.imagen--medios {
+    width: 80%;
+
+}
+
+/*Header*/
+header {
+    height: 100px;
+    background: #1f1c0d;
+    padding: 0 50px;
+    color: #FFFFFF;
+    display: flex;
+    /*para el contenedor*/
+    justify-content: space-between;
+    /*para que queden saparados*/
+    align-items: center;
+}
+
+.logo {
+    font-family: 'oleo';
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: #2EFE64;
+    font-weight: 200;
+    /*negrita*/
+}
+
+.menu a {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 10px;
+    /*arriba e izq - der*/
+    transition: 0.4s;
+}
+
+.mostrar-menu,
+.esconder-menu {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    /*agrego y quito*/
+    transition: 0.4s;
+}
+
+.mostrar-menu {
+    order: 1;
+    /*para que muestre al final las 3 rayitas*/
+}
+
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover {
+    color: #2EFE64;
+}
+
+#check {
+    display: none;
+    /*para que no muestre la X y 
+	3 lineas cuando la pantalla es grande*/
+}
+
+/* fin heade*/
+
+/*INICIO REDES SOCIALES*/
+.social {
+    position: fixed;
+    /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+    left: -15px;
+    /* Establecemos la barra en la izquierda */
+    top: 120px;
+    /* Bajamos la barra 120px de arriba a abajo */
+    z-index: 2000
+        /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+}
+
+.social ul {
+    list-style: none;
+    /*le quito las viñetas a la lista*/
+}
+
+.social ul li a {
+    display: inline-block;
+    /*en bloque uno debajo del otro*/
+    color: #fff;
+    /*blanco para los iconos*/
+    background: #FA58F4;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 0 5px 5px 0;
+    transition: all 500ms ease;
+    /* Establecemos una tiempo de animación a todas las propiedades */
+}
+
+.social ul li .icon-facebook2 {
+    background: #3b5998;
+}
+
+/* Establecemos los colores de cada red social, aprovechando su class */
+.social ul li .icon-twitter {
+    background: #00abf0;
+}
+
+.social ul li .icon-whatsapp {
+    background: #1ee248;
+}
+
+.social ul li .icon-instragram {
+    background: #FA58F4;
+}
+
+.social ul li .icon-mail4 {
+    background: #666666;
+}
+
+
+.social ul li a:hover {
+    background: #000;
+    /* Cambiamos el fondo a negro cuando el usuario pase el mouse */
+    padding: 15px 30px;
+    /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+}
+
+/*Fin redes sociales*/
+
+#aeropuerto {
+    padding-top: 5px;
+
+}
+
+#cataratas {
+    padding-top: 5px;
+}
+
+#foz {
+    background-color: #5581b9;
+    padding-top: 5px;
+
+}
+
+
+/* inicio galeria con texto sobre*/
+.container {
+    width: 100%;
+    /*height: 100vh;*/
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    /*max-width: 1100px;*/
+    /*margin: auto;*/
+}
+
+.box {
+    max-width: 450px;
+    /*width: 300px;
+    height: 400px;*/
+    position: relative;
+    overflow: hidden;
+    margin: 20px;
+    border: 3px solid #fff;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.capa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transform: scale(0);
+    transition: .6s ease;
+}
+
+.box:hover .capa {
+    transform: scale(1);
+}
+
+/*Medios de pago*/
+#medios-de-pago {
+    display: flex;
+    flex-direction: column;
+
+}
+
+/*fin galeria con texto sobre*/
+#otros {
+    background-color: rgb(96, 173, 250);
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.viajes img {
+    max-width: 90%;
+    border-radius: 15px;
+    display: block;
+    margin: auto;
+
+}
+
+.aeropuerto_int img {
+    max-width: 90%;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+
+
+}
+
+.cataratas_desc img {
+    max-width: 90%;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+
+}
+
+.accordion-button {
+    text-align: center;
+}
+
+.pago {
+    width: 90%;
+    height: 400px;
+    background-image: url(../assets/images/medios.png);
+    background-size: cover;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    background-attachment: fixed;
+
+}
+
+/*Css prueba inicio*/
+.img--card {
+    height: 180px;
+    width: 100%;
+}
+
+div [class^="col-"] {
+    padding: 5px;
+    height: 100%;
+
+}
+
+.card {
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.card-title {
+    font-size: 20px;
+    transition: 1s;
+    cursor: pointer;
+    text-align: center;
+}
+
+.card-title i {
+    font-size: 20px;
+    transition: 1s;
+    cursor: pointer;
+    color: #0f0b02
+}
+
+.card-title i:hover {
+    transform: scale(1.25) rotate(100deg);
+    color: #18d4ca;
+
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card-text {
+    height: 100%;
+    font-size: 20px;
+}
+
+.card::before,
+.card::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: scale3d(0, 0, 1);
+    transition: transform .3s ease-out 0s;
+    background: rgba(255, 255, 255, 0.1);
+    content: '';
+    pointer-events: none;
+}
+
+.card::before {
+    transform-origin: left top;
+}
+
+.card::after {
+    transform-origin: right bottom;
+}
+
+.card:hover::before,
+.card:hover::after,
+.card:focus::before,
+.card:focus::after {
+    transform: scale3d(1, 1, 1);
+}
+
+/*Fin prueba*/
+
+
+footer {
+    background-color: black;
+    color: aliceblue;
+}
+
+
+/*responsive para celulares*/
+
+@media only screen and (max-width:900px) {
+    .container {
+        width: 90%;
+        margin: auto;
+        flex-wrap: wrap;
+    }
+
+    .social {
+        position: absolute;
+    }
+
+    .texto {
+        margin-left: 10px;
+    }
+
+    p {
+        font-size: 14px;
+        margin: 20px 15px;
+    }
+
+    h6 {
+        font-size: 12px;
+    }
+
+    /*clase de aeropuerto y cataratas para celular, quito el margen izquierdo*/
+    .accordion-body {
+        margin-left: 10px;
+    }
+
+}
+
+/* fin responsive para celulares*/
+/*RESPONSIVE*/
+@media(min-width:791px) and (max-width:1120px) {
+    .logo {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 30px;
+
+    }
+
+    p {
+        font-size: 20px;
+        margin: 20px 15px;
+    }
+
+    h6 {
+        font-size: 14px;
+    }
+
+    .menu a {
+        color: #30c20b;
+        font-size: 15px;
+        padding: 0 5px;
+    }
+
+}
+
+/*para tablet*/
+@media(max-width: 768px) {
+
+    /*header*/
+    .mostrar-menu,
+    .esconder-menu {
+        display: block;
+    }
+
+    .texto {
+        margin-left: 10px;
+    }
+
+    .menu {
+        position: fixed;
+        width: 100%;
+        /*que tome todo el ancho*/
+        height: 480px;
+        background: #848484;
+        /*left: 0;*/
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+    }
+
+    .menu a {
+        display: block;
+        padding: 20px;
+    }
+
+    .esconder-menu {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    /* cuando pulse el check y todos los elementos
+	del menu*/
+    #check:checked~.menu {
+        right: 0;
+    }
+
+    .logo {
+        font-size: 30px;
+    }
+
+    h1 {
+        font-size: 35px;
+
+    }
+
+    p {
+        font-size: 14px;
+        margin: 20px 15px;
+    }
+
+    h3 {
+        font-size: 25px;
+        margin-top: 30px;
+    }
+
+    h5 {
+        font-size: 30px;
+
+    }
+
+    h6 {
+        font-size: 12px;
+    }
+
+    li {
+        font-size: 14px;
+    }
+/*posicion de los botones de las redes sociales*/
+    .social {
+        top: 135px;
+        /* Bajamos la barra 120px de arriba a abajo */
+     
+    }
+    /*tamaño de los botones de redes sociales*/
+    .social ul li a {
+        padding: 10px 15px;
+    }
+
+    .li-margen {
+        margin-left: 10px;
+    }
+}

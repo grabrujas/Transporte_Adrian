@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="descripción"
+    content="Empresa de transporte de pasajeros en Puerto Iguazú. Precios accesibles y acorde a sus necesidades.">
+  <meta name="keywords" content="HTML, CSS, JS, bootstrap, SASS">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/fuentes.css">
+  <title>Transporte Adrián - El mejor servicio de transporte</title>
+
+
+</head>
+
+<body>
+  <header>
+    <h2 class="logo">Transfer Adrián</h2>
+    <input type="checkbox" id="check" name="">
+    <label for="check" class="mostrar-menu">
+      &#8801
+    </label>
+    <!-- Menú  -->
+    <nav class="menu">
+      <a href="#inicio">Inicio</a>
+      <a href="#aeropuerto">Aeropuerto</a>
+      <a href="#cataratas">Cataratas</a>
+      <a href="#foz">Foz de Iguazú</a>
+      <a href="#otros">Otros</a>
+      <a href="#medios-de-pago">Pagos</a>
+      <label for="check" class="esconder-menu">
+        &#215
+      </label>
+    </nav>
+  </header>
+  <main>
+    <section id="inicio">
+
+      <img src="./assets/images/frente.jpg" class="imagen--ppal" alt="Cataratas del Iguazú"
+        title="Una de las maravillas naturales del mundo">
+      <h1>Transporte Adrián</h1>
+      <div class="texto">
+        <p>Transfers Adrián ofrece servicios de traslado hacia y desde Aeropuertos, Terminales de Omnibus, Hoteles,
+          y Puntos Turísticos. Somos de Puerto Iguazú y conocemos muy bien la zona.
+          Tenemos más de 10 años de experiencia brindando nuestros servicios dentro de este único y proviliegiado
+          lugar.
+          No ofrecemos excursiones, pero una vez contratado alguno de nuestros servicios, podrá contar con nuestro
+          asesoramiento (como comprar entradas a las distintas atracciones) para garantizarle la mejor estadía en
+          nuestra región.
+          Consulte por paquetes, para coordinar el viaje entre los diferentes puntos turísticos, hospedajes y zonas
+          de interés en Puerto Iguazú (ARG) y Foz de Iguazú (BRA).
+          Una vez contratados nuestros servicios, usted maneja los horarios, sin presiones ni apuros. Lo esperamos
+          en el lugar de su alojamiento y lo recogemos en el horario acordado. Usted y su familia pasan a ser
+          nuestra prioridad, para que pase el tiempo que esté aquí, de la mejor manera.</p>
+        <p>También traslados a:</p>
+        <ul class="li-margen">
+          <li>Duty Free Shop (Puerto Iguazú)</li>
+          <li>Bar de hielo (Puerto Iguazú)</li>
+          <li>Jardin de los Picaflores (Puerto Iguazú)</li>
+          <li>Jungle Fly Iguazu</li>
+          <li>Represa de Itaipú (Brasil)</li>
+          <li>Templo Budista (Brasil)</li>
+          <li>Ciudad del Este (Paraguay)</li>
+          <li>Y muchos más...</li>
+        </ul>
+      </div>
+
+      <!-- Inicio Ventana modal-->
+      <!-- Button trigger modal -->
+      <button type="button" class="btn-btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Consulte...
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">No se olvide...</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Consulte por paquetes de viajes, con importantes descuentos.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Fin ventana modal-->
+
+    </section>
+    <!-- Redes sociales-->
+    <div class="social">
+      <ul>
+        <li><a href="https://www.facebook.com/profile.php?id=100087909889678&mibextid=LQQJ4d" target="_blank"
+            class="icon-facebook2"></a></li>
+        <li><a href="https://api.whatsapp.com/send?phone=5493757407268&text=Hola,%20soy%20" target="_blank"
+            class="icon-whatsapp"></a></li>
+        <li><a href="https://instagram.com/trasladosadrian95?igshid=MmIzYWVlNDQ5Yg==" target="_blank"
+            class="icon-instagram"></a></li>
+        <li><a href="mailto:verarobertoadrian@gmail.com" class="icon-mail4"></a></li>
+      </ul>
+    </div>
+    <!-- fin redes sociales-->
+
+
+    <section id="aeropuerto">
+      <div class="aeropuerto_int">
+        <h3>Aeropuerto Internacional Iguazú (Argentina)</h3>
+        <img src="./assets/images/aeropuerto.jpg" alt="Aeropuerto Internacional Iguazú"
+          title="Aeropuerto Internacional Iguazú">
+        <!-- Acordeon-->
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseOne">
+                Despliegue para ver la descripción </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+              <div class="accordion-body">
+                <p>Los esperamos en el aeropuerto y lo trasladamos hasta la Ciudad de Puerto Iguazú en un viaje que dura
+                  aproximadamente 30 minutos (28km), donde atravesamos selva y el Parque Nacional Iguazú.
+                  Se les solicita para este servicio el número de vuelo, además el nombre y apellido de un integrante
+                  de la familia para realizar un cartel con él y esperarlo en la salida de pasajeros.
+                  También hacemos viajes desde el Aeropuerto Internacional Cataratas hasta: </p>
+                <ul>
+                  <li>Hoteles de Brasil.</li>
+                  <li>Aeropuerto de Brasil.</li>
+                  <li>Hasta las localidades de Wanda, Puerto Esperanza, Puerto Libertad, Eldorado, Posadas, etc. </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--Fin acordeon-->
+
+
+        </div>
+
+
+    </section>
+    <section id="cataratas">
+      <div class="cataratas_desc">
+        <h3>Cataratas del Iguazú (Argentina)</h3>
+        <img src="./assets/images/cataratas.jpg" alt="Cataratas del Iguazú"
+          title="Una de las maravillas naturales del mundo">
+        <!-- Acordeon-->
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseOne">
+                Despliegue para ver la descripción </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+              <div class="accordion-body">
+                <p>Ubicadas en la frontera entre Argentina y Brasil, quedan aproximadamente a 30 km de la ciudad de
+                  Iguazú. Las Cataratas de Iguazú forman uno de los paisajes naturales más espectaculares del mundo.
+                  En el año 2012 fueron elegidas como una de las Siete Maravillas Naturales del Mundo.
+                <p>Lo asesoraremos en todo lo relacionado con poder recorrerlas con comodidad. Teniendo en cuenta la
+                  compra de los tikets para el ingreso, lo ayudaremos con la reserva de las excursiones que puede
+                  realizar y aconsejar en lo que necesite.</p>
+              </div>
+            </div>
+          </div>
+          <!--Fin acordeon-->
+
+        </div>
+
+    </section>
+    <section id="foz">
+      <h3>Conozca Foz de Iguazú (Paraguay)</h3>
+     <!--Agrego contenedor de imagenes traídas-->
+      <div class="container">
+        <div class="box">
+          <a href="#">
+            <img src="./assets/images/rafain.jpeg" alt="Rafain" title="Churrasquería">
+            <div class="capa">
+              <h6>Rafain Churrasquería Show: Disfrute de la mejor gastronomía y entretenimiento de Foz do Iguaçu y la
+                región. Amplia variedad de ensaladas, platos típicos brasileños, muestras de cocina oriental, árabe,
+                italiana, mariscos, buffet de postres y barbacoa con más de 15 tipos de carne.</h6>
+            </div>
+          </a>
+        </div>
+
+        <div class="box">
+          <a href="#">
+            <img src="./assets/images/mundo_motor.jpeg" alt="Mundo Motor" title="Mundo Motor">
+            <div class="capa">
+              <h6>Mundo Motor: Ya sea de día o de noche, ¡aquí se dan cita la cultura de la carretera, el rock and roll
+                y la buena cocina!
+                Es un museo de motos, con bar, restaurante y shows en vivo.</h6>
+            </div>
+          </a>
+        </div>
+
+        <div class="box">
+          <a href="#">
+            <img src="./assets/images/museo_de_cera1.jpeg" alt="Museo de Cera" title="Museo de Cera">
+            <div class="capa">
+              <h6>Creamland (Museo de Cera): Dreams Park Show en Foz de Iguazú cuenta con atracciones como el Museo de
+                Cera Dreamland, Valle de los Dinosaurios, Dreams Ice Bar (Ice Bar), World Wonders y Dreams Motor Show.
+              </h6>
+            </div>
+          </a>
+        </div>
+
+        <div class="box">
+          <a href="#">
+            <img src="./assets/images/movie_cars.jpeg" alt="Movie Cars" title="Exposición de autos">
+            <div class="capa">
+              <h6>Movie Cars: Podrá visitar la mayor exposición de automóviles de Foz de Iguazú. Cuenta con más de 40
+                vehículos en 24 escenarios. Podrán contemplar los vehículos que marcaron la historia de Hollywood, por
+                ejemplo el DeLorean de la inolvidable película Regreso al futuro, o el Ecto-1 de Los Cazafantasmas y
+                muchos más.</h6>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!--fin agrego imagenes-->
+      <select class="form-select" aria-label="Default select example">
+        <option selected>Requisitos para salir del país...</option>
+        <option value="1">Documento Nacional de Identidad</option>
+        <option value="2">Si viaja con menores de edad y los dos padres: Partida o Certificado de Nacimiento o Libreta Civil de Familia (original) a fin de demostrar la filiación.</option>
+        <option value="3">Si viaja con menores de edad y un solo padre: Permiso o autorización del progenitor faltante y Partida o Certificado de Nacimiento o Libreta Civil de Familia (original) a fin de demostrar la filiación.</option>
+      </select>
+    </section>
+
+
+    <section id="otros">
+
+      <!-- Aquí están todos los viajes que realiza dentro de la clase viajes -->
+
+      <div class="viajes">
+        <!--Aquí está la prueba-->
+        <div class="container mt-2">
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <div class="card card-block">
+                <h4 class="card-title text-right"><i class="material-icons">Cataratas (Brasil)</i></h4>
+                <img src="./assets/images/cataratasbrasil.jpg" class="img--card" alt="Cataratas Brasil">
+                <p class="card-text">Localizadas dentro del Parque Nacional do Iguaçu. Allí se sorprenderá con el
+                  cuidado, la belleza y la enormidad del mismo que alberga innumerables especies de animales y
+                  vegetales.
+                  Con pasarelas que lo llevarán hasta la mejor posición para apreciar estas bellezas.</p>
+
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="card card-block">
+                <h4 class="card-title text-right"><i class="material-icons">Ciudad del Este (Paraguay)</i></h4>
+                <img src="./assets/images/ciudaddeleste.jpg" class="img--card" alt="Ciudad del Este (Paraguay)">
+                <p class="card-text">Conocida por ser una de las zonas francas -de libre comercio- más grandes del
+                  mundo, siendo la principal ciudad más importante del país y de la región. Diariamente muchos turistas
+                  de todo el mundo,
+                  en especial brasileños y argentinos, cruzan el puente de la amistad.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="card card-block">
+                <h4 class="card-title text-right"><i class="material-icons">Parque de las aves (Brasil)</i></h4>
+                <img src="./assets/images/parquedasaves.jpg" class="img--card" alt="Parque de las aves (Brasil)"
+                  title="Parque de las aves">
+                <p class="card-text">Podrán entrar en los viveros para conocer la vida de las aves. Un mundo integrado
+                  por Aves tropicales exóticas que vuelan en amplios viveros integrados en la exuberante floresta húmeda
+                  tropical. Además de aves, yacarés, anacondas, boas, monos tití y mariposas.</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="card card-block">
+                <h4 class="card-title text-right"><i class="material-icons">La Aripuca (Iguazú)</i></h4>
+                <img src="./assets/images/aripuca.jpg" class="img--card" alt="La Aripuca (Iguazú)"
+                  title="Aripuca construcción con árboles rescatados">
+                <p class="card-text">La Aripuca es un emprendimiento Agro-Eco-Turistico familiar. Construído a base de
+                  árboles rescatados, inspirado en una típica trampa de los pueblos guaraníes, ''La Aripuca'' se impone
+                  con sus
+                  17 metros de altura y mas de 500.000 Kgs de peso.</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="card card-block">
+                <h4 class="card-title text-right"><i class="material-icons">Güirá Oga (Iguazú)</i></h4>
+                <img src="./assets/images/guiraoga.jpg" class="img--card" alt="Güirá Oga (Iguazú)"
+                  title="Casa de los pájaros">
+                <p class="card-text">El refugio de animales silvestres Güirá Oga ("la casa de los pájaros" en idioma
+                  guaraní) nació en base a la necesidad de contar con un establecimiento que se localizara en la misma
+                  selva
+                  misionera y trabajara con la fauna autóctona del lugar. Fue fundado el 23 de Agosto de 1997.</p>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+              <div class="card card-block">
+                <h4 class="card-title text-right"><i class="material-icons">Minas de Wanda (Argentina)</i></h4>
+                <img src="./assets/images/minas.jpg" class="img--card" alt="Minas de Wanda (Argentina)"
+                  title="Minas semipreciosas">
+                <p class="card-text">Ubicadas a 40 kilómetros de Puerto Iguazú, se encuentran las famosas Minas de
+                  Wanda, un yacimiento de piedras semipreciosas de cristales de cuarzo, amatistas, ágatas y topacios,
+                  entre las
+                  más importantes. Recostada sobre el caudaloso río Paraná. </p>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+              <div class="card card-block">
+                <h4 class="card-title text-right"><i class="material-icons">Saltos del Moconá (Argentina)</i></h4>
+                <img src="./assets/images/mocona.jpg" class="img--card" alt="Saltos del Moconá (Argentina)"
+                  title="El que todo lo traga">
+                <p class="card-text">Ubicados a unos 300 km de Iguazú. El principal atractivo del Parque Provincial
+                  Moconá
+                  se
+                  encuentra en la naturaleza de sus saltos, un espectáculo único en el mundo producto de una falla
+                  geológica
+                  hace millones de años. Estos recorren paralelamente al río Uruguay.</p>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+              <div class="card card-block">
+                <h4 class="card-title text-right"><i class="material-icons">Los destinos los elige usted</i></h4>
+                <img src="./assets/images/ruta.jpg" class="img--card" alt="Ruta misionera" title="Tierra colorada">
+                <p class="card-text">Estamos a su disposición para sugerirle o aceptar su propuesta de a dónde desea
+                  viajar.
+                  Tenemos
+                  basta experiencia en traslado de personas y sus familias, por lo tanto, usted estará seguro en
+                  nuestras unidades y viajará con experimentados choferes.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Fin prueba-->
+
+
+
+
+
+      </div>
+
+    </section>
+
+    <section id="medios-de-pago">
+
+      <img src="./assets/images/medios.png" class="imagen--medios" alt="Medios de pago" title="Pagos">
+      <ul class="li-margen">
+        <li>Efectivo.</li>
+        <li>Transferencia bancaria.</li>
+        <li>Aceptamos todas las tarjetas de crédito.</li>
+        <li>Mercado Pago</li>
+        <li>También trabajamos con Pre Viaje.</li>
+
+      </ul>
+
+
+
+    </section>
+  </main>
+  <footer>
+    <footer class="bg-light text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #3b5998;"
+            href="https://www.facebook.com/profile.php?id=100087909889678&mibextid=LQQJ4d" target="_blank"><i
+              class="icon-facebook2"></i></a>
+          <!-- Whassap -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #13d143;"
+            href="https://api.whatsapp.com/send?phone=5493757407268&text=Hola,%20soy%20" target="_blank"><i
+              class="icon-whatsapp"></i></a>
+          <!-- Instagram -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac;"
+            href="https://instagram.com/trasladosadrian95?igshid=MmIzYWVlNDQ5Yg==" target="_blank" role="button"><i
+              class="icon-instagram"></i></a>
+
+          <!-- Correo -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #5c575a;"
+            href="mailto:verarobertoadrian@gmail.com" class="icon-mail4" role="button"><i class="icon-mail4"></i></a>
+
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2023 Copyright: Graciela Báez
+
+      </div>
+      <!-- Copyright -->
+    </footer>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  
+</body>
+
+</html>
